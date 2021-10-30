@@ -159,16 +159,34 @@ html{
     font-size: 14px;
 }
 
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn{
     float: right;
     padding: 0 21px;
 }
 
 #header .search-btn:hover{
-    cursor:  pointer; /* thay đổi con trỏ chuột */
+    cursor:  pointer;
     background-color: #f44336;
 }
 
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    background-color: #ccc;
+    color: #000;
+}
+
+#header .menu-icon,
 #header .search-icon{
     color: #fff;
     font-size: 20px;
@@ -199,14 +217,14 @@ html{
     margin-top: 25px;
 }
 
-#content{
-}
-
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading{
@@ -348,6 +366,7 @@ html{
 /* Map section */
 .map-section img{
     width: 100%;
+    filter: grayscale(30%);
 }
 /* Footer section */
 #footer{
